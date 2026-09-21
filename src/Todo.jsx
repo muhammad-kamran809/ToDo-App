@@ -30,7 +30,7 @@ function Todo() {
         <ul>
         {todos.map((todo, index) => (
           <li key={index}>
-            <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
+            <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' , color: todo.completed ? 'red' : 'black' }}>
               {todo.text}
             </span>
             <button onClick={() => handleDelete(index)}>Delete</button>
